@@ -1,0 +1,33 @@
+{
+    "name": "Oauth2 test",
+    "description": "",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "key": "<key here>",
+    "oauth2": {
+        "client_id": "<client id here>",
+        "scopes": [
+            "profile email",
+            "https://www.googleapis.com/auth/contacts"
+        ]
+    },
+    "icons": {
+        "16": "./obj-16x16.png",
+        "32": "./obj-32x32.png",
+        "48": "./obj-48x48.png",
+        "128": "./obj-128x128.png"
+    },
+    "background": {
+        "scripts": [
+            "./background.js"
+        ]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "identity",
+        "identity.email"
+    ]
+}
